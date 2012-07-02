@@ -13,7 +13,7 @@ gem 'backbone-on-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
+gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -52,6 +52,8 @@ group :test do
   gem 'shoulda-matchers'
   gem 'guard-cucumber'
   #gem 'sqlite3'
+  gem 'growl'
+  gem 'webrat'
 end
 
 group :test, :development do
@@ -60,6 +62,7 @@ group :test, :development do
   gem 'factory_girl' # used to load factories in db/seeds
   gem 'guard-jasmine'
   gem 'jasminerice'
+  gem 'webrat'
 end
 
 group :development do
@@ -86,4 +89,3 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
