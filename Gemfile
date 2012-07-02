@@ -63,12 +63,14 @@ group :test, :development do
   gem 'guard-jasmine'
   gem 'jasminerice'
   gem 'webrat'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :development do
   gem 'sqlite3'
   gem 'haml-rails'
   gem 'faker'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :production do

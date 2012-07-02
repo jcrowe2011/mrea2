@@ -22,7 +22,29 @@ describe "LayoutsLinks" do
   end
   
   it "should have a Listings page at '/listings'" do
-    get '/'
+    get '/listings'
+    response.should have_selector('title', :content => "Listings")
+  end
+  
+  it "should have a sign up page at '/signup'" do
+    get '/signup'
+    response.should have_selector('title', :content => "Sign up")
+  end
+  
+  it "shoud have the right links on the layout" do
+    visit root_path
     response.should have_selector('title', :content => "Home")
+    click_link "Help"
+    response.should have_selector('title', :content => "Help")
+    click_link "Sign up"
+    response.should have_selector('title', :content => "Sign up")
+    response.should have_selector('a[href="/"]>img')
+  end
+  
+  it "should have the right links on the layout" do
+    visit profile_path
+    response.should have_selector('title', :content => "Profile")
+    click_link "Listings"
+    response.should have_selector('title', :content => "Listings")
   end
 end
