@@ -4,7 +4,7 @@ gem 'rails', '3.2.3'
 gem 'devise'
 gem 'cancan'
 gem 'heroku'
-gem 'thin'
+# gem 'thin'
 gem 'jquery-rails' # Let's consider using google CDN
 gem 'haml'
 gem 'therubyracer'
@@ -13,7 +13,7 @@ gem 'backbone-on-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -51,7 +51,7 @@ group :test do
   gem 'shoulda'
   gem 'shoulda-matchers'
   gem 'guard-cucumber'
-  #gem 'sqlite3'
+  gem 'sqlite3'
   gem 'growl'
   gem 'webrat'
 end
@@ -72,7 +72,8 @@ group :development do
 end
 
 group :production do
-
+#gem 'sqlite3'
+ gem 'pg'
 end
 
 # To use ActiveModel has_secure_password

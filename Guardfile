@@ -1,7 +1,11 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
+<<<<<<< HEAD
 guard 'rspec', :version => 2 do
+=======
+guard 'rspec', :wait => 120, :version => 2 do
+>>>>>>> 131a52fc43b5f8908fef0260f66181ec4fdadd29
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
