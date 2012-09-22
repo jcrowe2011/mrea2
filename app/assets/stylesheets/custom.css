@@ -572,7 +572,6 @@ margin-top: 3px;
 }
 
 .success {
-display: none;
 background: #9fbb35; /* Old browsers */
 background: -moz-linear-gradient(top, #9fbb35 0%, #768c26 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9fbb35), color-stop(100%,#768c26)); /* Chrome,Safari4+ */
@@ -720,4 +719,45 @@ background-position: 0 -504px;
 
 .options #delete a {
 	background-position: 0 -264px;
+}
+
+.field_with_errors{
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+.field_with_errors label {
+	color: #fff;
+}
+
+#error_explanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+	padding-bottom: 15px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
+}
+#error_explanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	font-size: 12px;
+	list-style: square;
 }

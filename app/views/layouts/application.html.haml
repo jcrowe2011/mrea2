@@ -6,6 +6,9 @@
 		= render 'layouts/stylesheets' 
 	%body
 		= render 'layouts/header'
+		- flash.each do |key, value|
+			.flash{:class => "#{key}"}
+				= value
 		= yield 
 		= debug(params) if Rails.env
 		= render 'layouts/footer'

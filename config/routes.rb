@@ -2,7 +2,7 @@ Mrea::Application.routes.draw do
 
   resources :users
 
-    root :to => 'pages#home'
+    root :to => 'users#new'
     
     match '/dashboard', :to => 'pages#dashboard'
     match '/profile',   :to => 'pages#profile'  
