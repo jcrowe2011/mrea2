@@ -67,7 +67,7 @@ gem 'sqlite3'
 end
 
 group :development do
-  gem 'pg'
+  #gem 'pg'
   gem 'haml-rails'
   gem 'faker'
 gem 'sqlite3'
@@ -75,7 +75,7 @@ end
 
 group :production do
 
- gem 'pg'
+#gem 'pg'
 gem 'sqlite3'
 end
 
