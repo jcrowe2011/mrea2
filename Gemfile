@@ -63,17 +63,20 @@ group :test, :development do
   gem 'guard-jasmine'
   gem 'jasminerice'
   gem 'webrat'
+gem 'sqlite3'
 end
 
 group :development do
   gem 'pg'
   gem 'haml-rails'
   gem 'faker'
+gem 'sqlite3'
 end
 
 group :production do
 
  gem 'pg'
+gem 'sqlite3'
 end
 
 # To use ActiveModel has_secure_password
